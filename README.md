@@ -38,7 +38,7 @@ This is a basic CRUD (Create, Read, Update, Delete) application for managing stu
 2. Install the dependencies:
       ```shell
       cd Basic-Student-Psql-App
-npm install
+      npm install
 
 3. Set up the database:
    - Make sure you have a PostgreSQL server running on your machine.
