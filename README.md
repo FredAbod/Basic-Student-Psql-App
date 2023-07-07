@@ -33,3 +33,32 @@ This is a basic CRUD (Create, Read, Update, Delete) application for managing stu
 
    ```shell
    git clone https://github.com/FredAbod/Basic-Student-Psql-App.git
+
+
+2. Install the dependencies:
+      ```shell
+      cd Basic-Student-Psql-App
+npm install
+
+3. Set up the database:
+   - Make sure you have a PostgreSQL server running on your machine.
+   - Create a new database named students.
+   - Import the SQL schema file provided in the database folder to set up the necessary table.
+  
+  4. Configure the database connection:
+   - Open the db.js file in the project's root directory.
+    - Update the connection details (user, host, password, port) to match your PostgreSQL configuration.
+
+    5. Start the application:
+   ```shell
+   npm start
+- The application should now be running on http://localhost:3000.
+
+### API Endpoints
+The following API endpoints are available:
+
+- `GET /api/v1/students` - Retrieve a list of all students.
+- `POST /api/v1/students` - Add a new student.
+- `GET /api/v1/students/:id` - Retrieve a student by ID.
+- `PUT /api/v1/students/:id` - Update a student's name.
+- `DELETE /api/v1/students/:id` - Remove a student from the database.
